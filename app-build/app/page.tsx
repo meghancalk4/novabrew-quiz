@@ -110,6 +110,9 @@ export default function Home() {
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-[#72554f] sm:text-xl">
                   This quiz blends mood-board energy, lifestyle instincts, and taste preferences to match you with the NovaBrew coffee that feels like you. Think less survey, more beautifully curated self-discovery.
                 </p>
+                <p className="mt-4 inline-flex w-fit rounded-full border border-[#f1c7bc] bg-white/72 px-4 py-2 text-sm font-medium text-[#9a5a50] shadow-[0_10px_24px_rgba(171,96,91,0.08)]">
+                  Now live online and ready to share.
+                </p>
               </div>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
