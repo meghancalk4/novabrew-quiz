@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaBrew Style Preview - Playful</title>
+  <style>
+    :root {
+      --bg1: #f8d8b9;
+      --bg2: #f6a39c;
+      --panel: rgba(255,255,255,0.84);
+      --text: #43271e;
+      --muted: #7a5c52;
+      --accent: #ff7a59;
+      --accent2: #f1b24a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.24), transparent 16%),
+        radial-gradient(circle at 80% 10%, rgba(255,255,255,0.18), transparent 12%),
+        linear-gradient(145deg, var(--bg1), var(--bg2));
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+    }
+    .card {
+      width: min(760px, 100%);
+      background: var(--panel);
+      border-radius: 34px;
+      padding: 34px;
+      box-shadow: 0 28px 80px rgba(110, 43, 42, 0.18);
+    }
+    .pill {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 122, 89, 0.12);
+      color: #af4e3a;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 0.95;
+    }
+    p {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+    .stack {
+      display: grid;
+      gap: 12px;
+    }
+    .option {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 16px 18px;
+      border-radius: 22px;
+      background: white;
+      border: 2px solid transparent;
+      transition: border-color 180ms ease, transform 180ms ease;
+    }
+    .option:hover {
+      border-color: rgba(241, 178, 74, 0.7);
+      transform: scale(1.01);
+    }
+    .emoji {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(255,122,89,0.18), rgba(241,178,74,0.22));
+      font-size: 24px;
+    }
+    .option strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 18px;
+    }
+    .option span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="pill">NovaBrew Quiz Preview</div>
+    <h1>Your Sunday reset mood board looks like...</h1>
+    <p>This version feels warm, internet-native, and fun. It is the most playful of the three, with a little quiz-app energy and a lot of personality.</p>
+    <section class="stack">
+      <div class="option">
+        <div class="emoji">✨</div>
+        <div>
+          <strong>Fresh flowers, dewy skin, playlist called “soft launch”</strong>
+          <span>Soft, bright, golden, and maybe slightly too photogenic.</span>
+        </div>
+      </div>
+      <div class="option">
+        <div class="emoji">🎬</div>
+        <div>
+          <strong>One-way ticket, last-minute plans, dramatic reveal energy</strong>
+          <span>You are here for the plot, not the routine.</span>
+        </div>
+      </div>
+      <div class="option">
+        <div class="emoji">💌</div>
+        <div>
+          <strong>Glossy magazine, vintage loafers, elite communication skills</strong>
+          <span>Charming, classic, and always weirdly put together.</span>
+        </div>
+      </div>
+      <div class="option">
+        <div class="emoji">🌙</div>
+        <div>
+          <strong>City at 1 a.m., black coat, one perfect candle lit</strong>
+          <span>You do your best thinking after everyone else logs off.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

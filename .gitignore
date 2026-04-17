@@ -1,0 +1,23 @@
+# Local build output and dependencies
+app-build/node_modules/
+app-build/.next/
+app-build/out/
+app-build/build/
+
+# Local logs and dev-server helpers
+app-build/dev-server.log
+app-build/dev-server.err.log
+app-build/dev-server.pid
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment and machine-specific files
+.env*
+.DS_Store
+*.pem
+
+# TypeScript build info
+app-build/*.tsbuildinfo
+app-build/next-env.d.ts

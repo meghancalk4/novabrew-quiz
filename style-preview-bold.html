@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaBrew Style Preview - Bold</title>
+  <style>
+    :root {
+      --bg: #120d0b;
+      --panel: #1b1310;
+      --text: #f7ecdc;
+      --muted: #c4b29f;
+      --accent: #d2a15c;
+      --accent-2: #8d5a33;
+      --line: rgba(247, 236, 220, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at top left, rgba(210, 161, 92, 0.16), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(141, 90, 51, 0.24), transparent 26%),
+        linear-gradient(160deg, #0f0907, var(--bg));
+      color: var(--text);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+    .frame {
+      width: min(780px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      box-shadow: 0 26px 80px rgba(0, 0, 0, 0.38);
+    }
+    .hero {
+      padding: 42px 40px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 11px;
+      color: var(--accent);
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 6vw, 60px);
+      line-height: 0.92;
+    }
+    p {
+      margin: 0 0 18px;
+      font-size: 18px;
+      line-height: 1.55;
+      color: var(--muted);
+      max-width: 640px;
+    }
+    .options {
+      padding: 22px 24px 30px;
+      display: grid;
+      gap: 12px;
+    }
+    .option {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 16px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(210, 161, 92, 0.10), rgba(255, 255, 255, 0.02));
+    }
+    .badge {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #1a120d;
+      font-weight: 800;
+      font-size: 20px;
+    }
+    .option strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 19px;
+    }
+    .option span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <section class="hero">
+      <div class="eyebrow">NovaBrew Quiz Preview</div>
+      <h1>Which energy are you bringing into the room?</h1>
+      <p>This version feels premium, dramatic, and social. It leans into confidence, nightlife, and a little cinematic tension.</p>
+    </section>
+    <section class="options">
+      <div class="option">
+        <div class="badge">01</div>
+        <div>
+          <strong>Golden skin, low sunlight, effortless taste</strong>
+          <span>The person everyone wants on the rooftop invite list.</span>
+        </div>
+      </div>
+      <div class="option">
+        <div class="badge">02</div>
+        <div>
+          <strong>Unexpected, chaotic in a chic way, always the twist</strong>
+          <span>Nothing about you arrives in the obvious order.</span>
+        </div>
+      </div>
+      <div class="option">
+        <div class="badge">03</div>
+        <div>
+          <strong>Magnetic, polished, and suspiciously easy to like</strong>
+          <span>You make taste feel effortless.</span>
+        </div>
+      </div>
+      <div class="option">
+        <div class="badge">04</div>
+        <div>
+          <strong>Late-night city glow, bold opinions, no soft launch</strong>
+          <span>You were never built for decaf energy.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
